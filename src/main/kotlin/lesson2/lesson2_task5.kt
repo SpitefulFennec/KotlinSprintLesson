@@ -16,8 +16,8 @@ fun main() {
     val depositTermInYears = 20
 
     val compoundInterestFormula =
-        depositAmount * (1 + interestRate * frequencyOfAccrualsPerYear).pow(frequencyOfAccrualsPerYear * depositTermInYears)
+        depositAmount * (1 + interestRate / frequencyOfAccrualsPerYear).pow(frequencyOfAccrualsPerYear * depositTermInYears)
 
-    println(String.format("%.3f", compoundInterestFormula))
+    println("%.3f".format(compoundInterestFormula))
 
 }
