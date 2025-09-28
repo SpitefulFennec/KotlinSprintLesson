@@ -12,7 +12,12 @@ fun main() {
     val provisionCargo = 50
 
     val isShipReady =
-        (isShipIntact && crewSize in MIN_CREW_SIZE..RECOMMENDED_CREW_SIZE && provisionCargo > MIN_PROVISION_CARGO) || (crewSize == RECOMMENDED_CREW_SIZE && isWeatherFavorable && provisionCargo >= MIN_PROVISION_CARGO)
+                (isShipIntact
+                && crewSize in MIN_CREW_SIZE..RECOMMENDED_CREW_SIZE
+                && provisionCargo > MIN_PROVISION_CARGO)
+                || (crewSize == RECOMMENDED_CREW_SIZE
+                && isWeatherFavorable
+                && provisionCargo >= MIN_PROVISION_CARGO)
 
     println("Может ли корабль отплыть? $isShipReady")
 
