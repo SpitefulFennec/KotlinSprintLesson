@@ -16,7 +16,11 @@ fun main() {
 
     if ((userFirstNumber == winningFirstNumber && userSecondNumber == winningSecondNumber) || (userFirstNumber == winningSecondNumber && userSecondNumber == winningFirstNumber)) {
         println("Вы правильно угадали оба числа и выиграли главный приз!!!")
-    } else if ((userFirstNumber == winningFirstNumber) || (userFirstNumber == winningSecondNumber) || (userSecondNumber == winningFirstNumber) || (userSecondNumber == winningSecondNumber)) {
+    } else if ((userFirstNumber == winningFirstNumber) ||
+        (userFirstNumber == winningSecondNumber) ||
+        (userSecondNumber == winningFirstNumber) ||
+        (userSecondNumber == winningSecondNumber)
+    ) {
         println("Вы правильно угадали одно из двух чисел и выиграли утешительный приз!")
     } else {
         println("Вы не угадали ни одно из чисел, повезёт в другой раз!")
