@@ -4,8 +4,11 @@ const val BOT_CHECKUP_MESSAGE = "Для входа в приложение ре�
 
 fun main() {
 
-    val Example = "2 + 2"
-    val solvedExample = 2 + 2
+    val firstNumberInExample = 2
+    val secondNumberInExample = 2
+
+    val Example = "$firstNumberInExample + $secondNumberInExample"
+    val solvedExample = firstNumberInExample + secondNumberInExample
 
     println("$BOT_CHECKUP_MESSAGE$Example")
 
