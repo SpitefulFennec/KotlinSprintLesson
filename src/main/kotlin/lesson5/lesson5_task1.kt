@@ -7,10 +7,10 @@ fun main() {
     val firstNumberInExample = 2
     val secondNumberInExample = 2
 
-    val Example = "$firstNumberInExample + $secondNumberInExample"
+    val example = "$firstNumberInExample + $secondNumberInExample"
     val solvedExample = firstNumberInExample + secondNumberInExample
 
-    println("$BOT_CHECKUP_MESSAGE$Example")
+    println("$BOT_CHECKUP_MESSAGE$example")
 
     val answerToExample = readln().toInt()
 
